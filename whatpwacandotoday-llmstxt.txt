@@ -1,0 +1,2110 @@
+# https://whatpwacando.today/ llms-full.txt
+
+<|firecrawl-page-1-lllmstxt|>
+## PWA Capabilities Showcase
+# What PWA Can Do Today
+
+A showcase of what is possible with Progressive Web Apps today.
+
+
+A Progressive Web App (PWA) is a website that can be installed on your device and provide an app-like experience
+[read more](https://whatpwacando.today/info)
+
+## How to use this app
+
+This app is itself a PWA so you can install it on your device and then check the [demos](https://whatpwacando.today/#demos) below to see what is supported on your device.
+
+
+When the button below becomes enabled, you can install this app.
+
+
+Install to home screen_add\_to\_home\_screen_
+
+## Stay up to date
+
+Join my email list for a weekly update on PWAs and new features of the modern web, tested and explained in plain
+English.
+
+
+[Subscribe here](https://modernwebweekly.substack.com/)
+
+## Need help?
+
+If you run into issues when implementing a PWA I can help by running an [audit](https://whatpwacando.today/audit) of it.
+
+
+## Demos
+
+Check the demos to see what is supported on your device.
+
+
+Show demo infoHide demo info
+
+[_install\_mobile_](https://whatpwacando.today/installation)
+
+[_download\_for\_offline_](https://whatpwacando.today/offline-support)
+
+[_notifications\_none_](https://whatpwacando.today/notifications)
+
+[_sms_](https://whatpwacando.today/declarative-web-push)
+
+[_app\_shortcut_](https://whatpwacando.today/shortcuts)
+
+[_auto\_awesome\_motion_](https://whatpwacando.today/view-transitions)
+
+[_call_](https://whatpwacando.today/incoming-call-notifications)
+
+[_gps\_fixed_](https://whatpwacando.today/geolocation)
+
+[_videocam_](https://whatpwacando.today/media)
+
+[_picture\_in\_picture_](https://whatpwacando.today/pip)
+
+[_insert\_drive\_file_](https://whatpwacando.today/file-system)
+
+[_fingerprint_](https://whatpwacando.today/authentication)
+
+[_language_](https://whatpwacando.today/protocol-handling)
+
+[_folder\_open_](https://whatpwacando.today/file-handling)
+
+[_account\_box_](https://whatpwacando.today/contacts)
+
+[_share_](https://whatpwacando.today/web-share)
+
+[_screenshot_](https://whatpwacando.today/viewport)
+
+[_qr\_code\_scanner_](https://whatpwacando.today/barcode)
+
+[_face_](https://whatpwacando.today/face-detection)
+
+[_vibration_](https://whatpwacando.today/vibration)
+
+[_mic_](https://whatpwacando.today/audio-recording)
+
+[_play\_circle\_filled_](https://whatpwacando.today/audio)
+
+[_tune_](https://whatpwacando.today/audiosession)
+
+[_screen\_share_](https://whatpwacando.today/capture-handle)
+
+[![element capture icon](https://whatpwacando.today/src/img/icons/element-capture.svg)](https://whatpwacando.today/element-capture)
+
+[_sync_](https://whatpwacando.today/background-sync)
+
+[_downloading_](https://whatpwacando.today/background-fetch)
+
+[_inventory_](https://whatpwacando.today/storage)
+
+[_bluetooth_](https://whatpwacando.today/bluetooth)
+
+[_nfc_](https://whatpwacando.today/nfc)
+
+[_layers_](https://whatpwacando.today/ar-vr)
+
+[_credit\_card_](https://whatpwacando.today/payment)
+
+[_screen\_lock\_portrait_](https://whatpwacando.today/wake-lock)
+
+[_screen\_rotation_](https://whatpwacando.today/device-orientation)
+
+[_3d\_rotation_](https://whatpwacando.today/device-motion)
+
+[_network\_check_](https://whatpwacando.today/network-info)
+
+[_record\_voice\_over_](https://whatpwacando.today/speech-synthesis)
+
+[_hearing_](https://whatpwacando.today/speech-recognition)
+
+[_touch\_app_](https://whatpwacando.today/multi-touch)
+
+![](https://whatpwacando.today/src/img/install/arrow-forward.svg)
+
+![](https://whatpwacando.today/src/img/screenshots/shot1.png)![](https://whatpwacando.today/src/img/screenshots/shot2.png)![](https://whatpwacando.today/src/img/screenshots/shot3.png)![](https://whatpwacando.today/src/img/screenshots/shot4.png)![](https://whatpwacando.today/src/img/screenshots/shot5.png)![](https://whatpwacando.today/src/img/screenshots/shot6.png)![](https://whatpwacando.today/src/img/screenshots/shot7.png)![](https://whatpwacando.today/src/img/screenshots/shot8.png)
+
+![](https://whatpwacando.today/src/img/install/arrow-forward.svg)
+
+<|firecrawl-page-2-lllmstxt|>
+## Audio Session API
+_keyboard\_backspace__wifi\_off_
+
+## AudioSession API
+
+This feature is not (yet) supported on your device
+
+The Audio Session API configures how audio from web apps should mix with audio from native apps.
+
+
+### Demo
+
+On a supporting device, play audio from another native app (for example, Music on iOS) and then also play the
+audio below with the radiobutton "auto" selected. You will notice the audio from the other app will be paused.
+
+
+If you restart the audio from the other app and then play the audio below again with the radiobutton "transient"
+selected, you will notice the audio from the other app will not be paused but will be mixed with this audio.
+
+
+If you do it the other way around and start audio from this app first and then play audio from another app with the
+radiobutton "auto" selected, you will notice that the audio from this app will be paused.
+
+
+If you play audio from this app and then switch to another app with the radiobutton "transient" selected, the
+audio will be paused but if you then switch back to this app, the audio will resume playing. If you keep the
+audio from the other app playing when you switch back to this app, the audio will be mixed with the audio from the
+other app.
+
+
+auto
+
+transient
+
+transient-solo
+
+play-and-record
+
+AudioSession state:
+
+_content\_copy_Code
+
+```js
+
+
+```
+
+### Documentation
+
+[Audio Session API on W3C](https://www.w3.org/TR/audio-session/)
+
+### Browser support
+
+[Audio Session API on caniuse.com](https://caniuse.com/?search=audiosession%20api)
+
+![](https://whatpwacando.today/src/img/install/arrow-forward.svg)
+
+![](https://whatpwacando.today/src/img/screenshots/shot1.png)![](https://whatpwacando.today/src/img/screenshots/shot2.png)![](https://whatpwacando.today/src/img/screenshots/shot3.png)![](https://whatpwacando.today/src/img/screenshots/shot4.png)![](https://whatpwacando.today/src/img/screenshots/shot5.png)![](https://whatpwacando.today/src/img/screenshots/shot6.png)![](https://whatpwacando.today/src/img/screenshots/shot7.png)![](https://whatpwacando.today/src/img/screenshots/shot8.png)
+
+![](https://whatpwacando.today/src/img/install/arrow-forward.svg)
+
+<|firecrawl-page-3-lllmstxt|>
+## Document Picture-in-Picture
+_keyboard\_backspace__wifi\_off_
+
+## Picture-in-picture for any element
+
+This feature is not (yet) supported on your device
+
+The Document Picture-in-Picture API makes it possible to open an always-on-top window that can be populated with
+arbitrary HTML content, not just a <video> element.
+
+
+On iOS, you may need to enable MediaRecorder in:
+
+Settings > Safari > Advanced > Experimental Features > MediaRecorder
+
+
+### Demo
+
+Click the "+" button of the web cam Web component below to start your web cam. Then click the
+"Start picture-in-picture" button and see that the entire Web Component is moved to the picture-in-picture window.
+
+
+You can use all controls of the Web Component while it's in the picture-in-picture window.
+
+
+Start picture-in-picture
+
+_video\_call_
+
+_videocam_
+
+_videocam\_off_
+
+_switch\_video_
+
+_picture\_in\_picture\_alt_
+
+_airplay_
+
+_fiber\_manual\_record_
+
+_stop_
+
+_power\_settings\_new_ Automatic Picture-in-Picture
+
+
+_play\_arrow_
+
+_pause_
+
+_get\_app_
+
+### No access to media
+
+Your device does not have permission to access the camera and microphone. Please enable this in your device's
+settings.
+
+Close
+
+_content\_copy_Code
+
+```js
+
+pipButton.addEventListener('click', async () => {
+  // open the picture-in-picture window and save the reference to it
+  const pipWindow = await documentPictureInPicture.requestWindow({
+    width: 800,
+    height: 600
+  });
+
+  // get a reference to the web cam Web Component
+  const webCam = document.querySelector('web-cam');
+
+  // add the web cam to the picture-in-picture window
+  pipWindow.document.body.appendChild(webCam);
+
+  // when the picture-in-picture window is closed, remove the web cam from it and append it back
+  // to its container the main document
+  pipWindow.addEventListener('unload', (e) => {
+    const webCamContainer = document.querySelector('.web-cam-container');
+    const webCam =  e.target.querySelector('web-cam');
+    webCamContainer.appendChild(webCam);
+  })
+});
+
+```
+
+pipButton.addEventListener('click', async () => {
+// open the picture-in-picture window and save the reference to it
+const pipWindow = await documentPictureInPicture.requestWindow({
+width: 800,
+height: 600
+});
+
+// get a reference to the web cam Web Component
+const webCam = document.querySelector('web-cam');
+
+// add the web cam to the picture-in-picture window
+pipWindow.document.body.appendChild(webCam);
+
+// when the picture-in-picture window is closed, remove the web cam from it and append it back
+// to its container the main document
+pipWindow.addEventListener('unload', (e) => {
+const webCamContainer = document.querySelector('.web-cam-container');
+const webCam = e.target.querySelector('web-cam');
+webCamContainer.appendChild(webCam);
+})
+});
+
+
+### Documentation
+
+[Document Picture-in-Picture API on MDN](https://developer.mozilla.org/en-US/docs/Web/API/Document_Picture-in-Picture_API)
+
+### Browser support
+
+[Document Picture-in-Picture API on caniuse.com](https://caniuse.com/?search=document-picture-in-picture)
+
+![](https://whatpwacando.today/src/img/install/arrow-forward.svg)
+
+![](https://whatpwacando.today/src/img/screenshots/shot1.png)![](https://whatpwacando.today/src/img/screenshots/shot2.png)![](https://whatpwacando.today/src/img/screenshots/shot3.png)![](https://whatpwacando.today/src/img/screenshots/shot4.png)![](https://whatpwacando.today/src/img/screenshots/shot5.png)![](https://whatpwacando.today/src/img/screenshots/shot6.png)![](https://whatpwacando.today/src/img/screenshots/shot7.png)![](https://whatpwacando.today/src/img/screenshots/shot8.png)
+
+![](https://whatpwacando.today/src/img/install/arrow-forward.svg)
+
+<|firecrawl-page-4-lllmstxt|>
+## Media Capture Demo
+_keyboard\_backspace__wifi\_off_
+
+## Media capture
+
+Media capture allows apps to use the camera and microphone of a device. After recording a video you can play it,
+download it or record another one.
+
+
+On iOS, you may need to enable MediaRecorder in:
+
+Settings > Safari > Advanced > Experimental Features > MediaRecorder
+
+
+Your device supports live streaming and recording of audio and video.
+
+### Demo
+
+Click the "+" button to start your web cam. You can then record a video, play it and download it.
+
+
+You can check the "Automatic Picture-in-Picture" box to enable automatic Picture-in-Picture when you focus
+another browser tab.
+
+
+_video\_call_
+
+_videocam_
+
+_videocam\_off_
+
+_switch\_video_
+
+_picture\_in\_picture\_alt_
+
+_airplay_
+
+_fiber\_manual\_record_
+
+_stop_
+
+_power\_settings\_new_ Automatic Picture-in-Picture
+
+
+_play\_arrow_
+
+_pause_
+
+_get\_app_
+
+### No access to media
+
+Your device does not have permission to access the camera and microphone. Please enable this in your device's
+settings.
+
+Close
+
+_content\_copy_Code
+
+```js
+
+// request the user's camera and microphone as a MediaStream
+const stream = await navigator.mediaDevices.getUserMedia({video: true, audio: true});
+
+// attach the stream to the video element
+const video = document.querySelector('video');
+video.srcObject = stream;
+
+// set a handler for the media session's picture-in-picture action
+navigator.mediaSession.setActionHandler("enterpictureinpicture", () => {
+  // display the video in Picture-in-Picture mode
+  video.requestPictureInPicture();
+});
+
+```
+
+// request the user's camera and microphone as a MediaStream
+const stream = await navigator.mediaDevices.getUserMedia({video: true, audio: true});
+
+// attach the stream to the video element
+const video = document.querySelector('video');
+video.srcObject = stream;
+
+// set a handler for the media session's picture-in-picture action
+navigator.mediaSession.setActionHandler("enterpictureinpicture", () => {
+// display the video in Picture-in-Picture mode
+video.requestPictureInPicture();
+});
+
+
+### Documentation
+
+[getUserMedia on MDN](https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getUserMedia)
+
+[Automatic picture-in-picture on Chrome Developers](https://developer.chrome.com/blog/automatic-picture-in-picture/)
+
+### Browser support
+
+[getUserMedia on caniuse.com](https://caniuse.com/#feat=stream)
+
+Automatic Picture-in-Picture is supported in Chromium-based browsers.
+
+
+![](https://whatpwacando.today/src/img/install/arrow-forward.svg)
+
+![](https://whatpwacando.today/src/img/screenshots/shot1.png)![](https://whatpwacando.today/src/img/screenshots/shot2.png)![](https://whatpwacando.today/src/img/screenshots/shot3.png)![](https://whatpwacando.today/src/img/screenshots/shot4.png)![](https://whatpwacando.today/src/img/screenshots/shot5.png)![](https://whatpwacando.today/src/img/screenshots/shot6.png)![](https://whatpwacando.today/src/img/screenshots/shot7.png)![](https://whatpwacando.today/src/img/screenshots/shot8.png)
+
+![](https://whatpwacando.today/src/img/install/arrow-forward.svg)
+
+<|firecrawl-page-5-lllmstxt|>
+## Viewport Interactive Widget
+_keyboard\_backspace__wifi\_off_
+
+## Viewport: interactive-widget
+
+This feature is not (yet) supported on your device
+
+The `content` attribute of the `viewport` meta tag is used to control how the viewport of the page
+behaves when an interactive widget like an on-screen keyboard is shown.
+
+
+Example:
+
+`<meta name="viewport" content="interactive-widget=resizes-visual">`
+
+`interactive-widget` can take the following values:
+
+- `resizes-visual`: The keyboard resizes the Visual Viewport, the content of the page may be pushed up when
+the keyboard is shown. Elements with `position: fixed` will remain in place and can be obscured by the keyboard.
+- `resizes-content`: The keyboard resizes the both the Visual Viewport and the Layout Viewport, the content of
+the page may be pushed up when the keyboard is shown. Elements with `position: fixed` will can be pushed up as well.
+- `overlays-content`: The keyboard overlays the viewport and both the Visual Viewport and the Layout Viewport will not be
+resized, the content of the page will remain in place.
+
+### Demo
+
+
+Tap the textfield below to show the on-screen keyboard. Change the value of "interactive-widget" with the radio buttons
+to see how the keyboard interacts with the viewport.
+
+
+resizes-visual
+
+resizes-content
+
+overlays-content
+
+Name
+
+_content\_copy_Code
+
+```html
+
+<meta name="viewport" content="interactive-widget=resizes-visual">
+<meta name="viewport" content="interactive-widget=resizes-content">
+<meta name="viewport" content="interactive-widget=overlays-content">
+
+```
+
+
+<meta name="viewport" content="interactive-widget=resizes-visual">
+<meta name="viewport" content="interactive-widget=resizes-content">
+<meta name="viewport" content="interactive-widget=overlays-content">
+
+
+### Documentation
+
+[Interactive widget on MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Viewport_meta_element#the_effect_of_interactive_ui_widgets)
+
+[Viewport resize behavior on Chrome Developers](https://developer.chrome.com/blog/viewport-resize-behavior)
+
+### Browser support
+
+The `interactive-widget` part of the `content` attribute of the viewport meta tag is supported in Chrome on Android.
+
+
+![](https://whatpwacando.today/src/img/install/arrow-forward.svg)
+
+![](https://whatpwacando.today/src/img/screenshots/shot1.png)![](https://whatpwacando.today/src/img/screenshots/shot2.png)![](https://whatpwacando.today/src/img/screenshots/shot3.png)![](https://whatpwacando.today/src/img/screenshots/shot4.png)![](https://whatpwacando.today/src/img/screenshots/shot5.png)![](https://whatpwacando.today/src/img/screenshots/shot6.png)![](https://whatpwacando.today/src/img/screenshots/shot7.png)![](https://whatpwacando.today/src/img/screenshots/shot8.png)
+
+![](https://whatpwacando.today/src/img/install/arrow-forward.svg)
+
+<|firecrawl-page-6-lllmstxt|>
+## PWA Payment Demo
+_keyboard\_backspace__wifi\_off_
+
+## Payment
+
+This feature is not (yet) supported on your device
+
+The Payment Request API provides a browser-based method to enable users to make payments on the web, using a credit
+card, Apple Pay or Google Pay for example.
+
+
+Safari on iOS currently only supports Apple Pay.
+
+### Demo
+
+Click the Apple Pay button below to make a payment
+
+_(demo only, no actual payment is made)._
+
+Click the Checkout button below to make a payment
+
+_(demo only, no actual payment is made)._
+
+Checkout_credit\_card_
+
+_content\_copy_Code
+
+```js
+
+const applePayButton = document.querySelector('#apple-pay-button');
+const paymentButton = document.querySelector('#payment-button');
+
+const applePayMethod = {
+  supportedMethods: 'https://apple.com/apple-pay',
+  data: {
+    version: 3,
+    merchantIdentifier: 'merchant.whatpwacando.today',
+    merchantCapabilities: ['supports3DS', 'supportsCredit', 'supportsDebit'],
+    supportedNetworks: ['amex', 'discover', 'masterCard', 'visa', 'maestro'],
+    countryCode: 'US',
+  },
+};
+
+const cardMethod = {
+  supportedMethods: 'basic-card',
+  data: {
+    supportedNetworks: [\
+      'visa', 'mastercard'\
+    ]
+  }
+};
+
+const paymentDetails = {
+  id: 'order-123',
+  displayItems: [\
+    {\
+      label: 'PWA Demo Payment',\
+      amount: {currency: 'USD', value: '0.01'}\
+    }\
+  ],
+  total: {
+    label: 'Total',
+    amount: {currency: 'USD', value: '0.01'}
+  }
+};
+
+if(applePayButton) {
+  applePayButton.addEventListener('click', async () => {
+    const request = new PaymentRequest([applePayMethod], paymentDetails);
+    const response = await request.show();
+
+    console.log(response);
+  });
+}
+
+if(paymentButton) {
+  paymentButton.addEventListener('click', async () => {
+    const request = new PaymentRequest([cardMethod], paymentDetails);
+    const response = await request.show();
+
+    console.log(response);
+  });
+}
+
+```
+
+
+const applePayButton = document.querySelector('#apple-pay-button');
+const paymentButton = document.querySelector('#payment-button');
+
+const applePayMethod = {
+supportedMethods: 'https://apple.com/apple-pay',
+data: {
+version: 3,
+merchantIdentifier: 'merchant.whatpwacando.today',
+merchantCapabilities: \['supports3DS', 'supportsCredit', 'supportsDebit'\],
+supportedNetworks: \['amex', 'discover', 'masterCard', 'visa', 'maestro'\],
+countryCode: 'US',
+},
+};
+
+const cardMethod = {
+supportedMethods: 'basic-card',
+data: {
+supportedNetworks: \[\
+'visa', 'mastercard'\
+\]
+}
+};
+
+const paymentDetails = {
+id: 'order-123',
+displayItems: \[\
+{\
+label: 'PWA Demo Payment',\
+amount: {currency: 'USD', value: '0.01'}\
+}\
+\],
+total: {
+label: 'Total',
+amount: {currency: 'USD', value: '0.01'}
+}
+};
+
+if(applePayButton) {
+applePayButton.addEventListener('click', async () => {
+const request = new PaymentRequest(\[applePayMethod\], paymentDetails);
+const response = await request.show();
+
+console.log(response);
+});
+}
+
+if(paymentButton) {
+paymentButton.addEventListener('click', async () => {
+const request = new PaymentRequest(\[cardMethod\], paymentDetails);
+const response = await request.show();
+
+console.log(response);
+});
+}
+
+
+### Documentation
+
+[Payment Request API on MDN](https://developer.mozilla.org/en-US/docs/Web/API/Payment_Request_API/Using_the_Payment_Request_API)
+
+### Browser support
+
+[Payment Request API on caniuse.com](https://caniuse.com/#feat=payment-request)
+
+![](https://whatpwacando.today/src/img/install/arrow-forward.svg)
+
+![](https://whatpwacando.today/src/img/screenshots/shot1.png)![](https://whatpwacando.today/src/img/screenshots/shot2.png)![](https://whatpwacando.today/src/img/screenshots/shot3.png)![](https://whatpwacando.today/src/img/screenshots/shot4.png)![](https://whatpwacando.today/src/img/screenshots/shot5.png)![](https://whatpwacando.today/src/img/screenshots/shot6.png)![](https://whatpwacando.today/src/img/screenshots/shot7.png)![](https://whatpwacando.today/src/img/screenshots/shot8.png)
+
+![](https://whatpwacando.today/src/img/install/arrow-forward.svg)
+
+<|firecrawl-page-7-lllmstxt|>
+## PWA Installation Guide
+_keyboard\_backspace__wifi\_off_
+
+## Installation
+
+Progressive Web Apps can be installed to the home screen on mobile devices and desktop on laptops and desktop
+computers. On Chromium based browsers, the `beforeinstallprompt` event is fired when the web app is
+eligible to be installed. This event will display a native install dialog that includes a button to install the
+web app.
+
+
+## Demo
+
+Click the "Install" button below to install this web app. In supporting browsers, the native install dialog will
+appear and in non-supporting browsers, a bottom sheet with instructions how to install this web app will be
+displayed.
+
+
+Install to home screen_add\_to\_home\_screen_
+
+## Experimental: Web Install API
+
+The Web Install API allows web apps to be installed to the home screen of a device. It can be used to install the current web app
+or web apps from other domains. This enables installing web apps from app stores for example.
+
+
+To install the current web app, use `navigator.install();`
+
+To install a web app from another domain, use `navigator.install('https://otherdomain.com', 'https://otherdomain.com/app-id');`
+where the second argument is the Computed app ID of the web app.
+
+
+To find the Computed app ID, open the Application tab in the Chrome DevTools, click "Manifest" on the left, and look for the "Computed app ID" field in the right pane.
+
+
+The Web Install API is supported in Chrome and Edge 143+ through an origin trial.
+
+
+## Demo
+
+Click the button below to install the [store.app](https://store.app/) and
+[pwastore.io](https://www.pwastore.io/) web apps from this PWA.
+
+
+Install store.app![](https://whatpwacando.today/src/img/store.app-24x24.png)
+
+Install pwastore.io![](https://whatpwacando.today/src/img/pwastore-32x32.png)
+
+## Handling the install prompt
+
+A best-practice is to defer the display of the install dialog using `event.preventDefault()` and
+displaying it when it makes more sense, for example, when the user explicitly clicks a button to install the web
+app.
+
+
+_content\_copy_Code
+
+```js
+
+let deferredEvent;
+
+window.addEventListener('beforeinstallprompt', (e) => {
+  // prevent the browser from displaying the default install dialog
+  e.preventDefault();
+
+  // Stash the event so it can be triggered later when the user clicks the button
+  deferredEvent = e;
+});
+
+installButton.addEventListener('click', () => {
+  // if the deferredEvent exists, call its prompt method to display the install dialog
+  if(deferredEvent) {
+    deferredEvent.prompt();
+  }
+});
+
+```
+
+let deferredEvent;
+
+window.addEventListener('beforeinstallprompt', (e) => {
+// prevent the browser from displaying the default install dialog
+e.preventDefault();
+
+// Stash the event so it can be triggered later when the user clicks the button
+deferredEvent = e;
+});
+
+installButton.addEventListener('click', () => {
+// if the deferredEvent exists, call its prompt method to display the install dialog
+if(deferredEvent) {
+deferredEvent.prompt();
+}
+});
+
+
+For a web app to be eligible to be installed, it must meet some technical requirements:
+
+
+- The web app must have a manifest.json file
+- The web app must be served over https
+
+The manifest.json file tells the browser how the PWA should appear and behave on the device and for a web app to
+be installable it must have the following required members:
+
+
+- `name` or `short_name`
+- `icons` must contain a 192px and a 512px icon
+- `start_url`
+- `display` and/or `display_override`
+- `prefer_related_applications` must be `false` or not present
+
+For a description of these members, see the
+[Web app manifest reference](https://developer.mozilla.org/en-US/docs/Web/Manifest)
+
+In addition to these required members, a description of the web app and an optional array of screenshots can be
+included that will be shown in the native install dialog, bringing the install process closer to that of native
+apps.
+
+
+Screenshots must follow these criteria:
+
+
+- Width and height must be at least 320px and at most 3,840px.
+- The maximum dimension can't be more than 2.3 times as long as the minimum dimension.
+- All screenshots with the same form factor value must have identical aspect ratios.
+- Only JPEG and PNG image formats are supported.
+- Only eight screenshots will be shown. If more are added, the user agent simply ignores them.
+
+In addition, all screenshots must have a `form_factor` property that indicates whether the screenshot is
+displayed on mobile devices (value is "narrow") or desktop devices (value is "wide").
+
+
+_content\_copy_Code
+
+```html
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- manifest.json must be included on each page like this -->
+    <link rel="manifest" href="manifest.json">
+
+  </head>
+  <body></body>
+</html>
+
+
+```
+
+```json
+
+{
+  "name": "What PWA Can Do Today",
+  "short_name": "PWA Today",
+  "description": "What PWA Can Do Today is a showcase of what is possible with Progressive Web Apps today.\\n\\nThe app is itself a Progressive Web App which means it can be installed to the home screen of your mobile device or to your desktop.",
+  "id": "pwa-today",
+  "start_url": "/?source=pwa",
+  "display": "standalone",
+  "icons": [\
+    {\
+      "src": "src/img/icons/manifest-icon-192.maskable.png",\
+      "sizes": "192x192",\
+      "type": "image/png",\
+      "purpose": "any"\
+    },\
+    {\
+      "src": "src/img/icons/manifest-icon-512.maskable.png",\
+      "sizes": "512x512",\
+      "type": "image/png",\
+      "purpose": "maskable"\
+    },\
+  ],
+  "screenshots": [\
+    {\
+      "src": "/src/img/screenshots/shot1.png",\
+      "sizes": "400x822",\
+      "type": "image/png",\
+      "form_factor": "narrow"   <--- screenshot for mobile devices\
+    },\
+    {\
+      "src": "/src/img/screenshots/shot7.png",\
+      "sizes": "1280x676",\
+      "type": "image/png",\
+      "form_factor": "wide"     <--- screenshot for desktop devices\
+    },\
+  ]
+}
+
+```
+
+```js
+
+// handle the beforeinstallprompt event
+window.addEventListener('beforeinstallprompt', e => {
+  // prevent the install dialog from appearing too early
+  e.preventDefault();
+
+  // store the event for later use
+  window.deferredPrompt = e;
+});
+
+// event listener for the install button click
+installButton.addEventListener('click', () => {
+  if(window.deferredPrompt) {
+    // call the prompt method on the deferredPrompt object to display the install dialog
+    window.deferredPrompt.prompt();
+  }
+  else {
+    // show a dialog with instructions for browsers that don't support beforeinstallprompt
+  }
+}
+
+```
+
+<!doctype html>
+<html lang="en">
+<head>
+<!\-\- manifest.json must be included on each page like this -->
+<link rel="manifest" href="manifest.json">
+
+</head>
+<body></body>
+</html>
+
+
+{
+"name": "What PWA Can Do Today",
+"short\_name": "PWA Today",
+"description": "What PWA Can Do Today is a showcase of what is possible with Progressive Web Apps today.\\\n\\\nThe app is itself a Progressive Web App which means it can be installed to the home screen of your mobile device or to your desktop.",
+"id": "pwa-today",
+"start\_url": "/?source=pwa",
+"display": "standalone",
+"icons": \[\
+{\
+"src": "src/img/icons/manifest-icon-192.maskable.png",\
+"sizes": "192x192",\
+"type": "image/png",\
+"purpose": "any"\
+},\
+{\
+"src": "src/img/icons/manifest-icon-512.maskable.png",\
+"sizes": "512x512",\
+"type": "image/png",\
+"purpose": "maskable"\
+},\
+\],
+"screenshots": \[\
+{\
+"src": "/src/img/screenshots/shot1.png",\
+"sizes": "400x822",\
+"type": "image/png",\
+"form\_factor": "narrow" <--- screenshot for mobile devices\
+},\
+{\
+"src": "/src/img/screenshots/shot7.png",\
+"sizes": "1280x676",\
+"type": "image/png",\
+"form\_factor": "wide" <--- screenshot for desktop devices\
+},\
+\]
+}
+
+// handle the beforeinstallprompt event
+window.addEventListener('beforeinstallprompt', e => {
+// prevent the install dialog from appearing too early
+e.preventDefault();
+
+// store the event for later use
+window.deferredPrompt = e;
+});
+
+// event listener for the install button click
+installButton.addEventListener('click', () => {
+if(window.deferredPrompt) {
+// call the prompt method on the deferredPrompt object to display the install dialog
+window.deferredPrompt.prompt();
+}
+else {
+// show a dialog with instructions for browsers that don't support beforeinstallprompt
+}
+}
+
+
+### Documentation
+
+[Making Progressive Web Apps Installable on MDN](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Guides/Making_PWAs_installable)
+
+### Browser support
+
+The `beforeinstallprompt` event and the `screenshots` member of the manifest.json file are
+supported in Chromium based browsers, including Chrome, Edge, and Opera. For other browsers, you need to display
+a dialog with instructions on how to install the web app.
+
+
+![](https://whatpwacando.today/src/img/install/arrow-forward.svg)
+
+![](https://whatpwacando.today/src/img/screenshots/shot1.png)![](https://whatpwacando.today/src/img/screenshots/shot2.png)![](https://whatpwacando.today/src/img/screenshots/shot3.png)![](https://whatpwacando.today/src/img/screenshots/shot4.png)![](https://whatpwacando.today/src/img/screenshots/shot5.png)![](https://whatpwacando.today/src/img/screenshots/shot6.png)![](https://whatpwacando.today/src/img/screenshots/shot7.png)![](https://whatpwacando.today/src/img/screenshots/shot8.png)
+
+![](https://whatpwacando.today/src/img/install/arrow-forward.svg)
+
+<|firecrawl-page-8-lllmstxt|>
+## PWA Push Notifications
+_keyboard\_backspace__wifi\_off_
+
+## Notifications
+
+This feature is not (yet) supported on your device
+
+This feature is only available on installed web apps
+
+The Push API and Notifications API enable web apps to receive and display push notifications from a server, even
+when the app is in the background or not running at all.
+
+
+### Demo
+
+Click the "Subscribe" button below to subscribe to notifications. Once subscribed, you will send a notification to
+yourself by filling out the form below. You can specify a delay in seconds so you can schedule a notification and
+close the app in the meantime to check it is delivered while the app is not running.
+
+
+The "require interaction" checkbox will make the notification persistent on supporting devices, which means it will
+not disappear until the user interacts with it.
+
+
+Subscribe
+
+Unsubscribe
+
+You can send a notification through the form below.
+
+
+Title
+
+Notification
+
+Delay (max 5 seconds for demo purposes)
+
+Require interaction
+
+
+Send
+
+_content\_copy_Code
+
+```js
+
+const registration = await navigator.serviceWorker.getRegistration();
+
+const base64UrlToUint8Array = base64UrlData => {
+  const padding = '='.repeat((4 - base64UrlData.length % 4) % 4);
+  const base64 = (base64UrlData + padding)
+  .replace(/\-/g, '+')
+  .replace(/_/g, '/');
+
+  const rawData = atob(base64);
+  const buffer = new Uint8Array(rawData.length);
+
+  for(let i = 0; i < rawData.length; ++i) {
+    buffer[i] = rawData.charCodeAt(i);
+  }
+
+  return buffer;
+};
+
+const subscribeToPushMessages = (registration, publicKey) => registration.pushManager.subscribe({
+  userVisibleOnly: true,
+  applicationServerKey: base64UrlToUint8Array(publicKey)
+});
+
+const unsubscribeFromPushMessages = subscription => subscription.unsubscribe();
+
+const getPushSubscription = () => registration.pushManager.getSubscription();
+
+const apiUrl = '...';
+const sendPushMessage = async ({title, message, delay, interaction}) => {
+  const pushSubscription = await getPushSubscription();
+  const delayTime = !Number.isInteger(parseInt(delay, 10)) ? 0 :
+    delay > 5 ? 5 : delay;
+
+  fetch(apiUrl, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({
+      pushSubscription,
+      title,
+      message,
+      delay: delayTime * 1000,
+      interaction
+    })
+  });
+};
+
+// in service worker
+self.addEventListener('push', async e => {
+  const data = e.data.json();
+  const {title, message, interaction} = data;
+
+  const options = {
+    body: message,
+    icon: '/src/img/icons/icon-512x512.png',
+    vibrate: [100, 50, 100],
+    data: {
+      dateOfArrival: Date.now()
+    },
+    actions: [\
+      {\
+        action: 'confirm',\
+        title: 'OK'\
+      },\
+      {\
+        action: 'close',\
+        title: 'Close notification'\
+      },\
+    ],
+    requireInteraction: interaction
+  };
+
+  e.waitUntil(
+    self.registration.showNotification(title, options)
+    .then(hasActiveClients)
+    .then((activeClients) => {
+      if(!activeClients) {
+        self.numBadges += 1;
+        navigator.setAppBadge(self.numBadges);
+      }
+    })
+    .catch(err => sendMessage(err))
+  )
+});
+
+```
+
+
+const registration = await navigator.serviceWorker.getRegistration();
+
+const base64UrlToUint8Array = base64UrlData => {
+const padding = '='.repeat((4 - base64UrlData.length % 4) % 4);
+const base64 = (base64UrlData + padding)
+.replace(/\\-/g, '+')
+.replace(/\_/g, '/');
+
+const rawData = atob(base64);
+const buffer = new Uint8Array(rawData.length);
+
+for(let i = 0; i < rawData.length; ++i) {
+buffer\[i\] = rawData.charCodeAt(i);
+}
+
+return buffer;
+};
+
+const subscribeToPushMessages = (registration, publicKey) => registration.pushManager.subscribe({
+userVisibleOnly: true,
+applicationServerKey: base64UrlToUint8Array(publicKey)
+});
+
+const unsubscribeFromPushMessages = subscription => subscription.unsubscribe();
+
+const getPushSubscription = () => registration.pushManager.getSubscription();
+
+const apiUrl = '...';
+const sendPushMessage = async ({title, message, delay, interaction}) => {
+const pushSubscription = await getPushSubscription();
+const delayTime = !Number.isInteger(parseInt(delay, 10)) ? 0 :
+delay > 5 ? 5 : delay;
+
+fetch(apiUrl, {
+method: 'POST',
+headers: {
+'Content-Type': 'application/json'
+},
+body: JSON.stringify({
+pushSubscription,
+title,
+message,
+delay: delayTime \* 1000,
+interaction
+})
+});
+};
+
+// in service worker
+self.addEventListener('push', async e => {
+const data = e.data.json();
+const {title, message, interaction} = data;
+
+const options = {
+body: message,
+icon: '/src/img/icons/icon-512x512.png',
+vibrate: \[100, 50, 100\],
+data: {
+dateOfArrival: Date.now()
+},
+actions: \[\
+{\
+action: 'confirm',\
+title: 'OK'\
+},\
+{\
+action: 'close',\
+title: 'Close notification'\
+},\
+\],
+requireInteraction: interaction
+};
+
+e.waitUntil(
+self.registration.showNotification(title, options)
+.then(hasActiveClients)
+.then((activeClients) => {
+if(!activeClients) {
+self.numBadges += 1;
+navigator.setAppBadge(self.numBadges);
+}
+})
+.catch(err => sendMessage(err))
+)
+});
+
+
+### Documentation
+
+[ServiceWorkerRegistration.showNotification on MDN](https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerRegistration/showNotification) which is required by Chrome.
+
+
+[Notifications API on MDN](https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API)
+
+### Notification error
+
+Your device does not have permission to show notifications. Please enable this in your device's
+settings.
+
+Close
+
+### Browser support
+
+[Web Notification on caniuse.com](https://caniuse.com/#feat=notifications)
+
+![](https://whatpwacando.today/src/img/install/arrow-forward.svg)
+
+![](https://whatpwacando.today/src/img/screenshots/shot1.png)![](https://whatpwacando.today/src/img/screenshots/shot2.png)![](https://whatpwacando.today/src/img/screenshots/shot3.png)![](https://whatpwacando.today/src/img/screenshots/shot4.png)![](https://whatpwacando.today/src/img/screenshots/shot5.png)![](https://whatpwacando.today/src/img/screenshots/shot6.png)![](https://whatpwacando.today/src/img/screenshots/shot7.png)![](https://whatpwacando.today/src/img/screenshots/shot8.png)
+
+![](https://whatpwacando.today/src/img/install/arrow-forward.svg)
+
+<|firecrawl-page-9-lllmstxt|>
+## Declarative Web Push
+_keyboard\_backspace__wifi\_off_
+
+## Declarative Web Push
+
+This feature is not (yet) supported on your device
+
+This feature is only available on installed web apps
+
+Declarative Web Push enables web apps to receive and display push notifications without a service worker, even
+when the app is in the background or not running at all.
+
+
+The benefit of this approach is that the web app doesn't have to take care of showing the notification so it will still be displayed,
+even when the app doesn't implement functionality to display it or when there is an error in this code.
+
+
+### Demo
+
+Click the "Subscribe" button below to subscribe to notifications. Once subscribed, you will send a notification to
+yourself by filling out the form below. You can specify a delay in seconds so you can schedule a notification and
+close the app in the meantime to check it is delivered while the app is not running.
+
+
+Subscribe
+
+Unsubscribe
+
+You can send a notification through the form below.
+
+
+Title
+
+Notification
+
+Delay (max 5 seconds for demo purposes)
+
+Send
+
+_content\_copy_Code
+
+```js
+
+const pushSubscription = await pushManager.getSubscription();
+
+const base64UrlToUint8Array = base64UrlData => {
+  const padding = '='.repeat((4 - base64UrlData.length % 4) % 4);
+  const base64 = (base64UrlData + padding)
+  .replace(/\-/g, '+')
+  .replace(/_/g, '/');
+
+  const rawData = atob(base64);
+  const buffer = new Uint8Array(rawData.length);
+
+  for(let i = 0; i < rawData.length; ++i) {
+    buffer[i] = rawData.charCodeAt(i);
+  }
+
+  return buffer;
+};
+
+const subscribeToPushMessages = (publicKey) => pushManager.subscribe({
+  userVisibleOnly: true,
+  applicationServerKey: base64UrlToUint8Array(publicKey)
+});
+
+const unsubscribeFromPushMessages = subscription => subscription.unsubscribe();
+
+const getPushSubscription = () => pushManager.getSubscription();
+
+const apiUrl = '...';
+
+const sendPushMessage = async ({title, message, delay}) => {
+  const pushSubscription = await getPushSubscription();
+  const delayTime = !Number.isInteger(parseInt(delay, 10)) ? 0 :
+    delay > 5 ? 5 : delay;
+
+  fetch(apiUrl, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({
+      pushSubscription,
+      title,
+      message,
+      delay: delayTime * 1000
+    })
+  });
+};
+
+```
+
+
+const pushSubscription = await pushManager.getSubscription();
+
+const base64UrlToUint8Array = base64UrlData => {
+const padding = '='.repeat((4 - base64UrlData.length % 4) % 4);
+const base64 = (base64UrlData + padding)
+.replace(/\\-/g, '+')
+.replace(/\_/g, '/');
+
+const rawData = atob(base64);
+const buffer = new Uint8Array(rawData.length);
+
+for(let i = 0; i < rawData.length; ++i) {
+buffer\[i\] = rawData.charCodeAt(i);
+}
+
+return buffer;
+};
+
+const subscribeToPushMessages = (publicKey) => pushManager.subscribe({
+userVisibleOnly: true,
+applicationServerKey: base64UrlToUint8Array(publicKey)
+});
+
+const unsubscribeFromPushMessages = subscription => subscription.unsubscribe();
+
+const getPushSubscription = () => pushManager.getSubscription();
+
+const apiUrl = '...';
+
+const sendPushMessage = async ({title, message, delay}) => {
+const pushSubscription = await getPushSubscription();
+const delayTime = !Number.isInteger(parseInt(delay, 10)) ? 0 :
+delay > 5 ? 5 : delay;
+
+fetch(apiUrl, {
+method: 'POST',
+headers: {
+'Content-Type': 'application/json'
+},
+body: JSON.stringify({
+pushSubscription,
+title,
+message,
+delay: delayTime \* 1000
+})
+});
+};
+
+
+### Documentation
+
+[Declarative Web Push explainer on GitHub](https://github.com/WebKit/explainers/tree/main/DeclarativeWebPush).
+
+
+### Notification error
+
+Your device does not have permission to show notifications. Please enable this in your device's
+settings.
+
+Close
+
+### Browser support
+
+Declarative Web Push is supported in Safari 18.4 on iOS for web apps added to the Home Screen
+
+
+![](https://whatpwacando.today/src/img/install/arrow-forward.svg)
+
+![](https://whatpwacando.today/src/img/screenshots/shot1.png)![](https://whatpwacando.today/src/img/screenshots/shot2.png)![](https://whatpwacando.today/src/img/screenshots/shot3.png)![](https://whatpwacando.today/src/img/screenshots/shot4.png)![](https://whatpwacando.today/src/img/screenshots/shot5.png)![](https://whatpwacando.today/src/img/screenshots/shot6.png)![](https://whatpwacando.today/src/img/screenshots/shot7.png)![](https://whatpwacando.today/src/img/screenshots/shot8.png)
+
+![](https://whatpwacando.today/src/img/install/arrow-forward.svg)
+
+<|firecrawl-page-10-lllmstxt|>
+## PWA Information Hub
+_keyboard\_backspace__wifi\_off_
+
+## What is a PWA?
+
+A Progressive Web App (PWA) is basically just a website with some added features, which enable it to provide an
+app-like user-experience.
+
+
+This means it can work practically just like a native iOS or Android app. It can be installed to the home screen
+of your mobile device, work offline and receive push notifications, among other things.
+
+
+A well-designed PWA is indistinguishable from a native app, but it also offers some strong added benefits:
+
+
+- It's just a website! You don't need to build separate apps anymore. If you have a website, you can easily
+turn it into an iOS and Android app as well!
+
+- A PWA is much smaller than a native app. Your users no longer need to install tens of megabytes of code
+
+- No need to get your app into the App Store or Play Store. Just share the link to your website and users can
+install it as an app
+
+- There's no need to get users to install updates anymore. When you release a new version of your app, all your
+users automatically get the new version
+
+- By default, PWAs are served over HTTPS and are therefore safe and secure
+
+- PWAs are lightweight and offer high performance
+
+- Especially on Android, a PWA can almost do anything a native app can
+
+
+## Stay up to date
+
+Join my email list for a weekly update on PWAs and new features of the modern web, tested and explained in plain
+English.
+
+
+[Subscribe here](https://modernwebweekly.substack.com/)
+
+### Need help?
+
+Do you want to develop a PWA but you need help? Contact me!
+
+
+I can help you implement a great PWA or [run an audit](https://whatpwacando.today/audit) of your existing PWA to help you
+optimize it for a flawless user-experience.
+
+
+Please fill out the form below and I'll get back to you as soon as possible:
+
+
+Name
+
+Email
+
+Anti-spam: 2+5=
+
+Send
+
+![](https://whatpwacando.today/src/img/install/arrow-forward.svg)
+
+![](https://whatpwacando.today/src/img/screenshots/shot1.png)![](https://whatpwacando.today/src/img/screenshots/shot2.png)![](https://whatpwacando.today/src/img/screenshots/shot3.png)![](https://whatpwacando.today/src/img/screenshots/shot4.png)![](https://whatpwacando.today/src/img/screenshots/shot5.png)![](https://whatpwacando.today/src/img/screenshots/shot6.png)![](https://whatpwacando.today/src/img/screenshots/shot7.png)![](https://whatpwacando.today/src/img/screenshots/shot8.png)
+
+![](https://whatpwacando.today/src/img/install/arrow-forward.svg)
+
+<|firecrawl-page-11-lllmstxt|>
+## Web Bluetooth API
+_keyboard\_backspace__wifi\_off_
+
+## Web Bluetooth API
+
+This feature is not (yet) supported on your device
+
+The Web Bluetooth API enables apps to connect to Bluetooth Low Energy (BLE) devices and read values from or write
+values to it.
+
+
+To test, connect to a BLE device that advertises the "battery\_service" service.
+
+
+The easiest way is to download the
+[BLE Peripheral Simulator](https://play.google.com/store/apps/details?id=io.github.webbluetoothcg.bletestperipheral) app on another Android device and start the Battery service. Then change
+the battery level and tap the "Notify" button. This app will then show the current battery level of the BLE device.
+
+
+Tap "Scan" below to start scanning for BLE devices.
+
+
+Scan
+
+#### Battery level:
+
+_content\_copy_Code
+
+```js
+
+if('bluetooth' in navigator) {
+  const scan = document.querySelector('#scan');
+  const batteryIndicator = document.querySelector('#battery-indicator');
+
+  scan.addEventListener('click', async () => {
+
+    const connectToDevice = async ({bleService, bleCharacteristic}) => {
+      try {
+        const device = await navigator.bluetooth.requestDevice({
+          filters: [{\
+            services: [bleService]\
+          }]
+        });
+
+        device.addEventListener('gattserverdisconnected', () => {
+          batteryIndicator.value = 0;
+        });
+
+        const server = await device.gatt.connect();
+        const service = await server.getPrimaryService(bleService);
+        const characteristic = await service.getCharacteristic(bleCharacteristic);
+        await characteristic.startNotifications();
+
+        characteristic.addEventListener('characteristicvaluechanged', e => {
+          const value = e.target.value.getUint8(0);
+
+          console.log(\`$\{bleCharacteristic\} changed\`, value);
+
+          batteryIndicator.value = value;
+        });
+
+        characteristic.readValue();
+
+        return characteristic;
+      }
+      catch(err) {
+        console.error(err);
+      }
+    };
+
+    await connectToDevice({bleService: 'battery_service', bleCharacteristic: 'battery_level'});
+  });
+}
+
+```
+
+
+if('bluetooth' in navigator) {
+const scan = document.querySelector('#scan');
+const batteryIndicator = document.querySelector('#battery-indicator');
+
+scan.addEventListener('click', async () => {
+
+const connectToDevice = async ({bleService, bleCharacteristic}) => {
+try {
+const device = await navigator.bluetooth.requestDevice({
+filters: \[{\
+services: \[bleService\]\
+}\]
+});
+
+device.addEventListener('gattserverdisconnected', () => {
+batteryIndicator.value = 0;
+});
+
+const server = await device.gatt.connect();
+const service = await server.getPrimaryService(bleService);
+const characteristic = await service.getCharacteristic(bleCharacteristic);
+await characteristic.startNotifications();
+
+characteristic.addEventListener('characteristicvaluechanged', e => {
+const value = e.target.value.getUint8(0);
+
+console.log(\\\`$\\{bleCharacteristic\\} changed\\\`, value);
+
+batteryIndicator.value = value;
+});
+
+characteristic.readValue();
+
+return characteristic;
+}
+catch(err) {
+console.error(err);
+}
+};
+
+await connectToDevice({bleService: 'battery\_service', bleCharacteristic: 'battery\_level'});
+});
+}
+
+
+### Documentation
+
+[Interact with Bluetooth devices on the Web on developers.google.com](https://developers.google.com/web/updates/2015/07/interact-with-ble-devices-on-the-web)
+
+### Browser support
+
+[Web Bluetooth API on caniuse.com](https://caniuse.com/#feat=web-bluetooth)
+
+![](https://whatpwacando.today/src/img/install/arrow-forward.svg)
+
+![](https://whatpwacando.today/src/img/screenshots/shot1.png)![](https://whatpwacando.today/src/img/screenshots/shot2.png)![](https://whatpwacando.today/src/img/screenshots/shot3.png)![](https://whatpwacando.today/src/img/screenshots/shot4.png)![](https://whatpwacando.today/src/img/screenshots/shot5.png)![](https://whatpwacando.today/src/img/screenshots/shot6.png)![](https://whatpwacando.today/src/img/screenshots/shot7.png)![](https://whatpwacando.today/src/img/screenshots/shot8.png)
+
+![](https://whatpwacando.today/src/img/install/arrow-forward.svg)
+
+<|firecrawl-page-12-lllmstxt|>
+## PWA Audit Service
+_keyboard\_backspace__wifi\_off_
+
+## Audit
+
+Do you already have a PWA but are you running into issues with performance, security, or functionality?
+
+
+Or are you not sure how to make your PWA better?
+
+
+I can help you by running an audit of your PWA that evaluates it on 35+ criteria and provides you with
+**clear** and **actionable** instructions on how to improve it. No generic stuff that
+you can get anywhere but an in-depth quality checkup to get you on your way to a great PWA.
+
+
+Some of the criteria for the audit:
+
+- Installability
+
+- Cross-device and cross-platform compatibility
+
+- Offline support
+
+- Usability
+
+- Effective use of modern web APIs
+
+- Performance
+
+- Security
+
+
+## Ready to improve your PWA?
+
+Your investment in the improvement of your PWA through the audit is €599 excluding VAT (where applicable).
+
+
+Would you like to request an audit or would you first like to know more?
+
+
+Fill in the form below to contact me or [book a call](https://cal.com/dannymoerkerke)
+to discuss things further.
+
+
+Name
+
+Email
+
+Anti-spam: 2+5=
+
+Send
+
+![](https://whatpwacando.today/src/img/install/arrow-forward.svg)
+
+![](https://whatpwacando.today/src/img/screenshots/shot1.png)![](https://whatpwacando.today/src/img/screenshots/shot2.png)![](https://whatpwacando.today/src/img/screenshots/shot3.png)![](https://whatpwacando.today/src/img/screenshots/shot4.png)![](https://whatpwacando.today/src/img/screenshots/shot5.png)![](https://whatpwacando.today/src/img/screenshots/shot6.png)![](https://whatpwacando.today/src/img/screenshots/shot7.png)![](https://whatpwacando.today/src/img/screenshots/shot8.png)
+
+![](https://whatpwacando.today/src/img/install/arrow-forward.svg)
+
+<|firecrawl-page-13-lllmstxt|>
+## WebAuthn PWA Demo
+_keyboard\_backspace__wifi\_off_
+
+## Web Authentication
+
+This feature is not (yet) supported on your device
+
+Web Authentication API (WebAuthn) enables passwordless authentication through iOS FaceID, your device's fingerprint
+reader or an external USB Security Key.
+
+
+Register a credential using the button below and choose if you would like to authenticate using FaceID, your
+fingerprint or USB Security Key.
+
+
+After that, you can authenticate using the registered credential.
+
+
+### Demo
+
+Register credential
+
+Authenticate with credential_autorenew_
+
+### Web Authentication
+
+Delete credential_delete_
+
+### Code
+
+Check the webauthn-demo repo for the source code of this demo:
+
+
+[https://github.com/DannyMoerkerke/webauthn-demo](https://github.com/DannyMoerkerke/webauthn-demo)
+
+### Documentation
+
+[Web Authentication API on MDN](https://developer.mozilla.org/en-US/docs/Web/API/Web_Authentication_API)
+
+### Browser support
+
+[Web Authentication API on caniuse.com](https://caniuse.com/#feat=webauthn)
+
+![](https://whatpwacando.today/src/img/install/arrow-forward.svg)
+
+![](https://whatpwacando.today/src/img/screenshots/shot1.png)![](https://whatpwacando.today/src/img/screenshots/shot2.png)![](https://whatpwacando.today/src/img/screenshots/shot3.png)![](https://whatpwacando.today/src/img/screenshots/shot4.png)![](https://whatpwacando.today/src/img/screenshots/shot5.png)![](https://whatpwacando.today/src/img/screenshots/shot6.png)![](https://whatpwacando.today/src/img/screenshots/shot7.png)![](https://whatpwacando.today/src/img/screenshots/shot8.png)
+
+![](https://whatpwacando.today/src/img/install/arrow-forward.svg)
+
+<|firecrawl-page-14-lllmstxt|>
+## PWA Geolocation API
+_keyboard\_backspace__wifi\_off_
+
+## Geolocation
+
+This feature is not (yet) supported on your device
+
+The Geolocation API enables users to share their location with a web app. Below you will see your current location
+on a Google Map.
+
+
+### Demo
+
+### Documentation
+
+[Geolocation API on MDN](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API)
+
+### Browser support
+
+[Geolocation API on caniuse.com](https://caniuse.com/#feat=geolocation)
+
+![](https://whatpwacando.today/src/img/install/arrow-forward.svg)
+
+![](https://whatpwacando.today/src/img/screenshots/shot1.png)![](https://whatpwacando.today/src/img/screenshots/shot2.png)![](https://whatpwacando.today/src/img/screenshots/shot3.png)![](https://whatpwacando.today/src/img/screenshots/shot4.png)![](https://whatpwacando.today/src/img/screenshots/shot5.png)![](https://whatpwacando.today/src/img/screenshots/shot6.png)![](https://whatpwacando.today/src/img/screenshots/shot7.png)![](https://whatpwacando.today/src/img/screenshots/shot8.png)
+
+![](https://whatpwacando.today/src/img/install/arrow-forward.svg)
+
+<|firecrawl-page-15-lllmstxt|>
+## PWA Vibration API
+_keyboard\_backspace__wifi\_off_
+
+## Vibration
+
+This feature is not (yet) supported on your device
+
+The Vibration API enables web apps to make a mobile device vibrate.
+
+
+### Demo
+
+Tap, hold and lift your finger on the surface below to create a vibration pattern. Use the Play button to play the
+vibration pattern on your device.
+
+
+Record_fiber\_manual\_record_
+
+Play_play\_arrow_
+
+Stop_stop_
+
+_content\_copy_Code
+
+```js
+
+const maker = document.querySelector('#pattern-maker');
+const visualizer = document.querySelector('#pattern-visualizer');
+const recordButton = document.querySelector('#record');
+const playButton = document.querySelector('#play');
+const stopButton = document.querySelector('#stop');
+const ripple = document.querySelector('#ripple');
+
+visualizer.innerHTML = '';
+
+let pattern = [];
+
+const patternLength = 3000;
+let startTime = 0;
+let currentTime = 0;
+let patternTime = 0;
+const frames = [];
+
+const visualizerWidth = visualizer.offsetWidth;
+
+const moveRipple = (e) => {
+  const touches = [...e.changedTouches];
+
+  if(touches.length) {
+    const {pageX, pageY} = touches[0];
+    ripple.style.top = \`$\{pageY\}px\
+
+```
+
+
+const maker = document.querySelector('#pattern-maker');
+const visualizer = document.querySelector('#pattern-visualizer');
+const recordButton = document.querySelector('#record');
+const playButton = document.querySelector('#play');
+const stopButton = document.querySelector('#stop');
+const ripple = document.querySelector('#ripple');
+
+visualizer.innerHTML = '';
+
+let pattern = \[\];
+
+const patternLength = 3000;
+let startTime = 0;
+let currentTime = 0;
+let patternTime = 0;
+const frames = \[\];
+
+const visualizerWidth = visualizer.offsetWidth;
+
+const moveRipple = (e) => {
+const touches = \[...e.changedTouches\];
+
+if(touches.length) {
+const {pageX, pageY} = touches\[0\];
+ripple.style.top = \\\`$\\{pageY\\}px\
+
+
+![](https://whatpwacando.today/src/img/install/arrow-forward.svg)
+
+![](https://whatpwacando.today/src/img/screenshots/shot1.png)![](https://whatpwacando.today/src/img/screenshots/shot2.png)![](https://whatpwacando.today/src/img/screenshots/shot3.png)![](https://whatpwacando.today/src/img/screenshots/shot4.png)![](https://whatpwacando.today/src/img/screenshots/shot5.png)![](https://whatpwacando.today/src/img/screenshots/shot6.png)![](https://whatpwacando.today/src/img/screenshots/shot7.png)![](https://whatpwacando.today/src/img/screenshots/shot8.png)
+
+![](https://whatpwacando.today/src/img/install/arrow-forward.svg)
+
+<|firecrawl-page-16-lllmstxt|>
+## Web NFC Demo
+_keyboard\_backspace__wifi\_off_
+
+## Web NFC
+
+This feature is not (yet) supported on your device.
+
+The Web NFC API enables web apps to read and write to NFC tags when they are in close proximity to the
+device, usually 5-10 cm or 2-4 inches.
+
+
+### Demo
+
+Fill in the form with your data below and write it to the NFC tag by tapping the "Write" button and holding the
+tag close to your device.
+
+
+After that you can read the data back by tapping the "Scan" button and holding the tag close to your device.
+
+
+Full name
+
+Age
+
+City
+
+Write_edit_
+
+Scan_speaker\_phone_
+
+Stop scan_stop_
+
+_content\_copy_Code
+
+```js
+
+const scanButton = document.querySelector('#scan');
+const stopScanButton = document.querySelector('#stop-scan');
+const writeButton = document.querySelector('#write');
+const name = document.querySelector('#name');
+const age = document.querySelector('#age');
+const city = document.querySelector('#city');
+
+const nfcDialog = document.querySelector('#nfc-dialog');
+const closeButton = document.querySelector('#close-dialog');
+
+let scanning = false;
+
+closeButton.addEventListener('click', () => {
+  nfcDialog.close();
+});
+
+stopScanButton.disabled = true;
+
+const capitalize = string => \`$\{string.substr(0, 1).toUpperCase()\}$\{string.substr(1)\}\
+
+```
+
+
+const scanButton = document.querySelector('#scan');
+const stopScanButton = document.querySelector('#stop-scan');
+const writeButton = document.querySelector('#write');
+const name = document.querySelector('#name');
+const age = document.querySelector('#age');
+const city = document.querySelector('#city');
+
+const nfcDialog = document.querySelector('#nfc-dialog');
+const closeButton = document.querySelector('#close-dialog');
+
+let scanning = false;
+
+closeButton.addEventListener('click', () => {
+nfcDialog.close();
+});
+
+stopScanButton.disabled = true;
+
+const capitalize = string => \\\`$\\{string.substr(0, 1).toUpperCase()\\}$\\{string.substr(1)\\}\
+
+
+![](https://whatpwacando.today/src/img/install/arrow-forward.svg)
+
+![](https://whatpwacando.today/src/img/screenshots/shot1.png)![](https://whatpwacando.today/src/img/screenshots/shot2.png)![](https://whatpwacando.today/src/img/screenshots/shot3.png)![](https://whatpwacando.today/src/img/screenshots/shot4.png)![](https://whatpwacando.today/src/img/screenshots/shot5.png)![](https://whatpwacando.today/src/img/screenshots/shot6.png)![](https://whatpwacando.today/src/img/screenshots/shot7.png)![](https://whatpwacando.today/src/img/screenshots/shot8.png)
+
+![](https://whatpwacando.today/src/img/install/arrow-forward.svg)
+
+<|firecrawl-page-17-lllmstxt|>
+## Contact Picker API
+_keyboard\_backspace__wifi\_off_
+
+## Contact picker
+
+This feature is not (yet) supported on your device
+
+In Safari this feature can be enabled in Settings > Safari
+\> Experimental Features or on iOS 17 in Settings > Safari > Advanced > Feature Flags
+
+The Contact Picker API allows apps to select the user's contacts after permission has been granted.
+
+
+### Demo
+
+Select contacts
+
+### Selected contacts
+
+_content\_copy_Code
+
+```js
+
+if('contacts' in navigator && 'ContactsManager' in window) {
+  const props = await navigator.contacts.getProperties();
+  const list = document.querySelector('#contacts');
+  const button = document.querySelector('#select-contacts');
+
+  list.innerHTML = '';
+
+  const showContacts = contacts => {
+    const html = contacts.reduce((html, contact) => {
+      const names = contact.name.join(', ');
+      const emails = contact.email.join(', ');
+      const telephone = contact.tel.join(', ');
+
+      return \`$\{html\}
+        <p>
+          <span>
+            <i class="material-icons">person</i>
+            <strong>$\{names\}</strong><br>
+          </span>
+          <span>
+            <i class="material-icons">mail_outline</i>
+            $\{emails\}<br>
+          </span>
+          <span>
+            <i class="material-icons">phone</i>
+            $\{telephone\}</p>
+          </span>
+        \
+
+```
+
+
+if('contacts' in navigator && 'ContactsManager' in window) {
+const props = await navigator.contacts.getProperties();
+const list = document.querySelector('#contacts');
+const button = document.querySelector('#select-contacts');
+
+list.innerHTML = '';
+
+const showContacts = contacts => {
+const html = contacts.reduce((html, contact) => {
+const names = contact.name.join(', ');
+const emails = contact.email.join(', ');
+const telephone = contact.tel.join(', ');
+
+return \\\`$\\{html\\}
+<p>
+<span>
+<i class="material-icons">person</i>
+<strong>$\\{names\\}</strong><br>
+</span>
+<span>
+<i class="material-icons">mail\_outline</i>
+$\\{emails\\}<br>
+</span>
+<span>
+<i class="material-icons">phone</i>
+$\\{telephone\\}</p>
+</span>
+\
+
+
+![](https://whatpwacando.today/src/img/install/arrow-forward.svg)
+
+![](https://whatpwacando.today/src/img/screenshots/shot1.png)![](https://whatpwacando.today/src/img/screenshots/shot2.png)![](https://whatpwacando.today/src/img/screenshots/shot3.png)![](https://whatpwacando.today/src/img/screenshots/shot4.png)![](https://whatpwacando.today/src/img/screenshots/shot5.png)![](https://whatpwacando.today/src/img/screenshots/shot6.png)![](https://whatpwacando.today/src/img/screenshots/shot7.png)![](https://whatpwacando.today/src/img/screenshots/shot8.png)
+
+![](https://whatpwacando.today/src/img/install/arrow-forward.svg)
+
+<|firecrawl-page-18-lllmstxt|>
+## PWA Audio Control
+_keyboard\_backspace__wifi\_off_
+
+## Audio
+
+This feature is not (yet) supported on your device
+
+The Media Session API allows an app to display controls for media playback on a device's lock screen.
+
+
+On a supporting device, play the audio below and then lock the device to see the controls appear on the lock screen.
+
+
+_content\_copy_Code
+
+```js
+
+if('mediaSession' in navigator) {
+  const player = document.querySelector('audio');
+
+  navigator.mediaSession.metadata = new MediaMetadata({
+    title: 'Shadows of Ourselves',
+    artist: 'Thievery Corporation',
+    album: 'The Mirror Conspiracy',
+    artwork: [\
+      {\
+        src: 'https://whatpwacando.today/src/img/media/mirror-conspiracy256x256.jpeg',\
+        sizes: '256x256',\
+        type: 'image/jpeg'\
+      },\
+      {\
+        src: 'https://whatpwacando.today/src/img/media/mirror-conspiracy512x512.jpeg',\
+        sizes: '512x512',\
+        type: 'image/jpeg'\
+      }\
+    ]
+  });
+
+  navigator.mediaSession.setActionHandler('play', () => player.play());
+  navigator.mediaSession.setActionHandler('pause', () => player.pause());
+  navigator.mediaSession.setActionHandler('seekbackward', (details) => {
+    const skipTime = details.seekOffset || 1;
+    player.currentTime = Math.max(player.currentTime - skipTime, 0);
+  });
+
+  navigator.mediaSession.setActionHandler('seekforward', (details) => {
+    const skipTime = details.seekOffset || 1;
+    player.currentTime = Math.min(player.currentTime + skipTime, player.duration);
+  });
+
+  navigator.mediaSession.setActionHandler('seekto', (details) => {
+    if (details.fastSeek && 'fastSeek' in player) {
+      player.fastSeek(details.seekTime);
+      return;
+    }
+    player.currentTime = details.seekTime;
+  });
+
+  navigator.mediaSession.setActionHandler('previoustrack', () => {
+    player.currentTime = 0;
+  });
+}
+
+```
+
+
+if('mediaSession' in navigator) {
+const player = document.querySelector('audio');
+
+navigator.mediaSession.metadata = new MediaMetadata({
+title: 'Shadows of Ourselves',
+artist: 'Thievery Corporation',
+album: 'The Mirror Conspiracy',
+artwork: \[\
+{\
+src: 'https://whatpwacando.today/src/img/media/mirror-conspiracy256x256.jpeg',\
+sizes: '256x256',\
+type: 'image/jpeg'\
+},\
+{\
+src: 'https://whatpwacando.today/src/img/media/mirror-conspiracy512x512.jpeg',\
+sizes: '512x512',\
+type: 'image/jpeg'\
+}\
+\]
+});
+
+navigator.mediaSession.setActionHandler('play', () => player.play());
+navigator.mediaSession.setActionHandler('pause', () => player.pause());
+navigator.mediaSession.setActionHandler('seekbackward', (details) => {
+const skipTime = details.seekOffset \|\| 1;
+player.currentTime = Math.max(player.currentTime - skipTime, 0);
+});
+
+navigator.mediaSession.setActionHandler('seekforward', (details) => {
+const skipTime = details.seekOffset \|\| 1;
+player.currentTime = Math.min(player.currentTime + skipTime, player.duration);
+});
+
+navigator.mediaSession.setActionHandler('seekto', (details) => {
+if (details.fastSeek && 'fastSeek' in player) {
+player.fastSeek(details.seekTime);
+return;
+}
+player.currentTime = details.seekTime;
+});
+
+navigator.mediaSession.setActionHandler('previoustrack', () => {
+player.currentTime = 0;
+});
+}
+
+
+### Documentation
+
+[Media Session API on MDN](https://developer.mozilla.org/en-US/docs/Web/API/Media_Session_API)
+
+### Browser support
+
+[MediaSession API on caniuse.com](https://caniuse.com/#search=mediasession)
+
+![](https://whatpwacando.today/src/img/install/arrow-forward.svg)
+
+![](https://whatpwacando.today/src/img/screenshots/shot1.png)![](https://whatpwacando.today/src/img/screenshots/shot2.png)![](https://whatpwacando.today/src/img/screenshots/shot3.png)![](https://whatpwacando.today/src/img/screenshots/shot4.png)![](https://whatpwacando.today/src/img/screenshots/shot5.png)![](https://whatpwacando.today/src/img/screenshots/shot6.png)![](https://whatpwacando.today/src/img/screenshots/shot7.png)![](https://whatpwacando.today/src/img/screenshots/shot8.png)
+
+![](https://whatpwacando.today/src/img/install/arrow-forward.svg)
+

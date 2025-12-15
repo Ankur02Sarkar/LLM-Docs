@@ -1,0 +1,20 @@
+You are an advanced AI code analyst.
+I will provide you with a [route] from my web application codebase (e.g., /dashboard, /profile/settings).
+Your task is to automatically:
+Locate the main component for this route in the codebase and load its code.
+Recursively analyze all the imports in this component, including all nested components, utility functions, hooks, and every file used directly or indirectly by this route.
+Identify and list every UI element, feature, section, button, link, form, table, modal, tab, etc. that can appear when a user opens and interacts with this page, including all conditional and dynamic features.
+For each feature or section:
+Explain what the user sees when they navigate to this route.
+Describe in detail how each feature functions.
+Clarify what happens when each option/button/link is clicked or interacted with (including navigation, API calls, UI effects, state changes, errors, etc.).
+Describe the purpose and usage of every interactive element.
+If a feature depends on state or user input, explain the workflow step-by-step, including possible validations, dynamic changes, and error handling.
+If the page shows data from APIs or props, specify what is shown, how it loads, and what the user can do with it.
+Provide the report from a third-person, end-user perspective. Imagine you are guiding a new user through this page and all its functions:
+Use clear, concise, and non-technical language (unless a technical audience is specified).
+Ensure no feature or edge-case is skipped.
+Give a clear walkthrough: what to expect, how to use each part, how to achieve typical user goals, and what happens on each action.
+Conclude with a summary table or checklist of all features and options on this route, for quick reference.
+The generated report should be extremely detailed, exhaustive, and structured logically (use headings/sections as needed).
+Your answer MUST comprehensively cover every feature, workflow, and possible user interaction for this page/route.
